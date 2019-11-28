@@ -7,27 +7,26 @@ import org.junit.jupiter.api.Test;
 import static org.hamcrest.Matchers.equalTo;
 
 @QuarkusTest
-public class ExampleTest
-{
+public class ExampleTest {
     @Test
     public void testJaxrs() {
         RestAssured.when().get("/api/hello").then()
                 .contentType("text/plain")
-                .body(equalTo("hello jaxrs transaction"));
+                .body(equalTo("Hello OSS SUMMIT 2019"));
     }
 
     @Test
     public void testServlet() {
         RestAssured.when().get("/api/servlet/hello").then()
                 .contentType("text/plain")
-                .body(equalTo("hello servlet"));
+                .body(equalTo("Hello OSS SUMMIT 2019 - Servlet"));
     }
 
     @Test
     public void testVertx() {
         RestAssured.when().get("/api/vertx/hello").then()
                 .contentType("text/plain")
-                .body(equalTo("hello vertx"));
+                .body(equalTo("Hello OSS SUMMIT 2019 - Vert.X"));
     }
-
 }
+
