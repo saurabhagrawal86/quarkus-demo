@@ -12,12 +12,12 @@ public class ExampleResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return "hello jaxrs transaction";
+        return "Hello OSS SUMMIT 2019";
     }
 
     @POST
     @Produces(MediaType.TEXT_PLAIN)
     public String helloPOST() {
-        return "hello jaxrs post testing";
+        return "Hello OSS SUMMIT 2019 - POST testing";
     }
 }
